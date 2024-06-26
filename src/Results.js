@@ -12,7 +12,7 @@ export default function Result(props) {
           {props.results.phonetics.map(function (phonetic, index) {
             return (
               <div key={index}>
-                <Phonetic phonetics={phonetic} />
+                <Phonetic phonetic={phonetic} />
               </div>
             );
           })}
