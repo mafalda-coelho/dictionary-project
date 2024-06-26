@@ -1,6 +1,6 @@
 import React from "react";
 import Meaning from "./Meaning";
-//import Phonetic from "./Phonetics";
+import Phonetic from "./Phonetics";
 import "./Results.css";
 
 export default function Result(props) {
@@ -10,11 +10,11 @@ export default function Result(props) {
         <section>
           <h2>{props.results.word}</h2>
           {props.results.phonetics.map(function (phonetic, index) {
-            //return (
-            //<div key={index}>
-            // <Phonetic phonetics={phonetic} />
-            //</div>
-            // );
+            return (
+              <div key={index}>
+                <Phonetic phonetics={phonetic} />
+              </div>
+            );
           })}
         </section>
         {props.results.meanings.map(function (meaning, index) {
